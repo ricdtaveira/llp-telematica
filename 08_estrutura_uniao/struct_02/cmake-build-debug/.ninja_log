@@ -1,0 +1,11 @@
+# ninja log v5
+0	139	6885240749617320	CMakeFiles/struct_02.dir/main.c.obj	b01bb0e6baccaf8b
+144	334	6885240751515165	struct_02.exe	ad5529ec5dbb669a
+1	103	6885247118978952	CMakeFiles/struct_02.dir/main.c.obj	b01bb0e6baccaf8b
+103	329	6885247121187489	struct_02.exe	ad5529ec5dbb669a
+2	105	6885264733285716	CMakeFiles/struct_02.dir/main.c.obj	b01bb0e6baccaf8b
+106	279	6885264734973315	struct_02.exe	ad5529ec5dbb669a
+2	133	6885266396457881	CMakeFiles/struct_02.dir/main.c.obj	b01bb0e6baccaf8b
+134	440	6885266399514633	struct_02.exe	ad5529ec5dbb669a
+2	142	6885279261464499	CMakeFiles/struct_02.dir/main.c.obj	b01bb0e6baccaf8b
+142	314	6885279263158591	struct_02.exe	ad5529ec5dbb669a
