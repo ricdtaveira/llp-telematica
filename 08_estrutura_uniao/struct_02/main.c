@@ -19,6 +19,8 @@ struct strucAluno { // Declaração da Estrutura
 //             i é o indice da estrutura dentro do array
 
 void mostraRegistro (arAluno, i)
+
+// Array arAluno é um conjunto de estrutura de arAluno
 struct strucAluno arAluno[];
 int i;
 {
