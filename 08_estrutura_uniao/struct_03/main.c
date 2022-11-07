@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <malloc.h>
+#include <string.h>
 
 typedef struct aluno
 {
@@ -54,7 +55,15 @@ static ELEMENTO *head;
 
 int main() {
     int j=0;
-    for(j=0; j < 10; ++j)
-        add_element(criar_elemento_lista() );
+    ELEMENTO *ptr;
+    for(j=0; j < 10; ++j) {
+        ptr = criar_elemento_lista();
+        strcpy(ptr->al_nome, "Jose");
+        strcpy(ptr->al_cpf, "12345678900");
+        ptr->al_ano = 2022;
+        ptr->al_mes = 9;
+        ptr->al_dia = 20;
+        add_element(ptr);
+    }
     return 0;
 }
