@@ -12,6 +12,7 @@ typedef struct aluno
 
 // ELEMENTO é sinonimo de struct aluno
 typedef struct aluno ELEMENTO;
+static ELEMENTO *head;
 
 // Função para criar um elemento da lista encadeada.
 // Será alocado uma area na memória para a estrutura e
@@ -27,12 +28,33 @@ ELEMENTO *criar_elemento_lista()
         printf("Criação de Elemento da Lista com malloc falhou.\n");
         exit(1);
     }
-    p->proximo = NULL;
+    p->al_proximo = NULL;
     return p;
 }
 
+void add_element( e )
+ELEMENTO *e;
+{
+    ELEMENTO *p;
+/* Se o primeiro elemento (o cabeça) não foi criado
+*  cria-o agora.
+*/
+    if (head ==  NULL) {
+        head = e;
+        return;
+    }
+/* Se não, procurar o ultimo elemento da lista */
+    for (p = head; p->al_proximo != NULL; p = p->al_proximo);
+
+/* null statement */
+    p->al_proximo = e;
+}
+
+static ELEMENTO *head;
 
 int main() {
-    printf("Hello, World!\n");
+    int j=0;
+    for(j=0; j < 10; ++j)
+        add_element(criar_elemento_lista() );
     return 0;
 }
