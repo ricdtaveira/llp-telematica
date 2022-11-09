@@ -87,7 +87,7 @@ int main() {
     int j=0;
     ELEMENTO *ptr;
 
-    // Incluir na lista 10 esttruturas
+    // Incluir na lista 10 estruturas
     for(j=0; j < 10; ++j) {
         ptr = criar_elemento_lista();
         strcpy(ptr->al_nome, "Jose");

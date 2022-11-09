@@ -1,12 +1,14 @@
 # Listas Ligadas #
 >
-Temos usado um array de estrtuturas para manipular conjunto de dados.
+Temos usado um array de estruturas para manipular conjunto de dados.
 >
 Essa é uma abordagem válida quando se sabe com antecedencia
-quantas estruturas serão usadas.
+quantas estruturas serão alocadas na memória. 
 > 
 > 
-Quando o número de estruturas é desconhecido 
+Quando o número de estruturas é desconhecido é recomendável usar 
+uma estrutura possa variar de tamanho na medida em as inclusões
+de elementos ocorrem.
 > 
 >
 A maneira mais comum é construir uma estrutura de dados dinâmica 
