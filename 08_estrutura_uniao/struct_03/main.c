@@ -33,6 +33,7 @@ ELEMENTO *criar_elemento_lista()
     return p;
 }
 
+// Adicionar elemento na Lista
 void add_element( e )
 ELEMENTO *e;
 {
@@ -51,11 +52,42 @@ ELEMENTO *e;
     p->al_proximo = e;
 }
 
-static ELEMENTO *head;
+// Imprimir a Lista
+
+void imprimir_lista( e )
+ELEMENTO *e;
+{
+    ELEMENTO *p;
+    int c_aluno = 1;
+
+/* Verifica se a lista está vazia
+*  Se estiver imprime umamensagem e encerra a função
+*/
+    if (e ==  NULL) {
+        printf ("Lista está vazia");
+        return;
+    }
+
+    // Imprimir o Endereço do primeiro Elemento
+    printf("Endereco do Primeiro Elemento=%p\n\n",e);
+
+/* Percorrer a Lista e mostrar cada elemento  */
+    for (p = e; p->al_proximo != NULL; p = p->al_proximo){
+        printf("Aluno %d\n", c_aluno);
+        printf("Nome= %s\n",p->al_nome);
+        printf("Cpf= %s\n",p->al_cpf);
+        printf("Data Nascimento= %d-%d-%d\n",p->al_dia,p->al_mes,p->al_ano);
+        printf("Proximo=%p\n\n",p->al_proximo);
+        c_aluno++;
+    };
+}
+
 
 int main() {
     int j=0;
     ELEMENTO *ptr;
+
+    // Incluir na lista 10 esttruturas
     for(j=0; j < 10; ++j) {
         ptr = criar_elemento_lista();
         strcpy(ptr->al_nome, "Jose");
@@ -65,5 +97,8 @@ int main() {
         ptr->al_dia = 20;
         add_element(ptr);
     }
+
+    imprimir_lista(head);
+
     return 0;
 }

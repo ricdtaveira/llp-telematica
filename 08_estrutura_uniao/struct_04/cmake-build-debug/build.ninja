@@ -11,7 +11,7 @@
 # =============================================================================
 
 # =============================================================================
-# Project: union_01
+# Project: struct_04
 # Configurations: Debug
 # =============================================================================
 
@@ -39,49 +39,49 @@ include CMakeFiles/rules.ninja
 #############################################
 # Logical path to working directory; prefix for absolute paths.
 
-cmake_ninja_workdir = E$:/00-IFCE/00-Repositorios$ GitHub/llp-telematica/08_estrutura_uniao/struct_03/cmake-build-debug/
+cmake_ninja_workdir = E$:/00-IFCE/00-Repositorios$ GitHub/llp-telematica/08_estrutura_uniao/struct_04/cmake-build-debug/
 # =============================================================================
-# Object build statements for EXECUTABLE target union_01
+# Object build statements for EXECUTABLE target struct_04
 
 
 #############################################
-# Order-only phony target for union_01
+# Order-only phony target for struct_04
 
-build cmake_object_order_depends_target_union_01: phony || CMakeFiles/union_01.dir
+build cmake_object_order_depends_target_struct_04: phony || CMakeFiles/struct_04.dir
 
-build CMakeFiles/union_01.dir/main.c.obj: C_COMPILER__union_01_Debug E$:/00-IFCE/00-Repositorios$ GitHub/llp-telematica/08_estrutura_uniao/struct_03/main.c || cmake_object_order_depends_target_union_01
-  DEP_FILE = CMakeFiles\union_01.dir\main.c.obj.d
+build CMakeFiles/struct_04.dir/main.c.obj: C_COMPILER__struct_04_Debug E$:/00-IFCE/00-Repositorios$ GitHub/llp-telematica/08_estrutura_uniao/struct_04/main.c || cmake_object_order_depends_target_struct_04
+  DEP_FILE = CMakeFiles\struct_04.dir\main.c.obj.d
   FLAGS = -g -std=gnu99
-  OBJECT_DIR = CMakeFiles\union_01.dir
-  OBJECT_FILE_DIR = CMakeFiles\union_01.dir
-  TARGET_COMPILE_PDB = CMakeFiles\union_01.dir\
-  TARGET_PDB = union_01.pdb
+  OBJECT_DIR = CMakeFiles\struct_04.dir
+  OBJECT_FILE_DIR = CMakeFiles\struct_04.dir
+  TARGET_COMPILE_PDB = CMakeFiles\struct_04.dir\
+  TARGET_PDB = struct_04.pdb
 
 
 # =============================================================================
-# Link build statements for EXECUTABLE target union_01
+# Link build statements for EXECUTABLE target struct_04
 
 
 #############################################
-# Link the executable union_01.exe
+# Link the executable struct_04.exe
 
-build union_01.exe: C_EXECUTABLE_LINKER__union_01_Debug CMakeFiles/union_01.dir/main.c.obj
+build struct_04.exe: C_EXECUTABLE_LINKER__struct_04_Debug CMakeFiles/struct_04.dir/main.c.obj
   FLAGS = -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
-  OBJECT_DIR = CMakeFiles\union_01.dir
+  OBJECT_DIR = CMakeFiles\struct_04.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
-  TARGET_COMPILE_PDB = CMakeFiles\union_01.dir\
-  TARGET_FILE = union_01.exe
-  TARGET_IMPLIB = libunion_01.dll.a
-  TARGET_PDB = union_01.pdb
+  TARGET_COMPILE_PDB = CMakeFiles\struct_04.dir\
+  TARGET_FILE = struct_04.exe
+  TARGET_IMPLIB = libstruct_04.dll.a
+  TARGET_PDB = struct_04.pdb
 
 
 #############################################
 # Utility command for edit_cache
 
 build CMakeFiles/edit_cache.util: CUSTOM_COMMAND
-  COMMAND = cmd.exe /C "cd /D "E:\00-IFCE\00-Repositorios GitHub\llp-telematica\08_estrutura_uniao\struct_03\cmake-build-debug" && "C:\Program Files\JetBrains\CLion 2021.3.4\bin\cmake\win\bin\cmake.exe" -E echo "No interactive CMake dialog available.""
+  COMMAND = cmd.exe /C "cd /D "E:\00-IFCE\00-Repositorios GitHub\llp-telematica\08_estrutura_uniao\struct_04\cmake-build-debug" && "C:\Program Files\JetBrains\CLion 2021.3.4\bin\cmake\win\bin\cmake.exe" -E echo "No interactive CMake dialog available.""
   DESC = No interactive CMake dialog available...
   restat = 1
 
@@ -92,7 +92,7 @@ build edit_cache: phony CMakeFiles/edit_cache.util
 # Utility command for rebuild_cache
 
 build CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = cmd.exe /C "cd /D "E:\00-IFCE\00-Repositorios GitHub\llp-telematica\08_estrutura_uniao\struct_03\cmake-build-debug" && "C:\Program Files\JetBrains\CLion 2021.3.4\bin\cmake\win\bin\cmake.exe" --regenerate-during-build -S"E:\00-IFCE\00-Repositorios GitHub\llp-telematica\08_estrutura_uniao\struct_03" -B"E:\00-IFCE\00-Repositorios GitHub\llp-telematica\08_estrutura_uniao\struct_03\cmake-build-debug""
+  COMMAND = cmd.exe /C "cd /D "E:\00-IFCE\00-Repositorios GitHub\llp-telematica\08_estrutura_uniao\struct_04\cmake-build-debug" && "C:\Program Files\JetBrains\CLion 2021.3.4\bin\cmake\win\bin\cmake.exe" --regenerate-during-build -S"E:\00-IFCE\00-Repositorios GitHub\llp-telematica\08_estrutura_uniao\struct_04" -B"E:\00-IFCE\00-Repositorios GitHub\llp-telematica\08_estrutura_uniao\struct_04\cmake-build-debug""
   DESC = Running CMake to regenerate build system...
   pool = console
   restat = 1
@@ -102,7 +102,7 @@ build rebuild_cache: phony CMakeFiles/rebuild_cache.util
 # =============================================================================
 # Target aliases.
 
-build union_01: phony union_01.exe
+build struct_04: phony struct_04.exe
 
 # =============================================================================
 # Folder targets.
@@ -110,9 +110,9 @@ build union_01: phony union_01.exe
 # =============================================================================
 
 #############################################
-# Folder: E:/00-IFCE/00-Repositorios GitHub/llp-telematica/08_estrutura_uniao/struct_03/cmake-build-debug
+# Folder: E:/00-IFCE/00-Repositorios GitHub/llp-telematica/08_estrutura_uniao/struct_04/cmake-build-debug
 
-build all: phony union_01.exe
+build all: phony struct_04.exe
 
 # =============================================================================
 # Built-in targets
