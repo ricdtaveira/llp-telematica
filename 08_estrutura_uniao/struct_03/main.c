@@ -53,7 +53,6 @@ ELEMENTO *e;
 }
 
 // Imprimir a Lista
-
 void imprimir_lista( e )
 ELEMENTO *e;
 {
@@ -80,6 +79,12 @@ ELEMENTO *e;
         printf("Proximo=%p\n\n",p->al_proximo);
         c_aluno++;
     };
+    // Imprimir o ultimo
+    printf("Aluno %d\n", c_aluno);
+    printf("Nome= %s\n",p->al_nome);
+    printf("Cpf= %s\n",p->al_cpf);
+    printf("Data Nascimento= %d-%d-%d\n",p->al_dia,p->al_mes,p->al_ano);
+    printf("Proximo=%p\n\n",p->al_proximo);
 }
 
 
