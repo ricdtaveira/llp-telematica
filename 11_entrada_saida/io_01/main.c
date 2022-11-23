@@ -2,7 +2,6 @@
 #include <windows.h>
 #include <conio.h>
 
-
 void mostrar_Tela01();
 void mostrar_Tela02();
 void mostrar_Tela03();
@@ -10,7 +9,7 @@ void mostrar_Tela03();
 void mostrar_Tela01() {
     char opcao;
     do {
-        system("clear");
+        system("cls");
         // Mostrar menu
         printf("Cadastro de Alunos\n");
         printf("------------------\n");
@@ -28,14 +27,14 @@ void mostrar_Tela01() {
 
 void mostrar_Tela02(){
     char opcao;
-    system("clear");
+    system("cls");
     printf("\nTela_02");
     opcao=getchar();
 }
 
 void mostrar_Tela03(){
     char opcao;
-    system("clear");
+    system("cls");
     printf("\nTela_03");
     opcao=getchar();
 }
