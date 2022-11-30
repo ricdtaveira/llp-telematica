@@ -1,5 +1,8 @@
+// Leitura e gravação por Bloco
+
 #include <stddef.h>
 #include <stdio.h>
+
 #define FAIL 0
 #define SUCCESS 1
 #define BLOCKSIZE 512
@@ -14,6 +17,7 @@ char *infile, *outfile;
     DATA block[BLOCKSIZE];
 
     int num_read;
+
     if ((fp1 = fopen( infile, "rb" )) == NULL) {
         printf("Error opening file %s for input.\n", infile);
         return FAIL;
@@ -25,8 +29,9 @@ char *infile, *outfile;
         return FAIL;
     }
 
-    while ((num_read = fread( block, sizeof(DATA), BLOCKSIZE, fp1)) == BLOCKSIZE)
-            fwrite( block, sizeof(DATA) , num_read, fp2 );
+    while ((num_read = fread( block, sizeof(DATA), BLOCKSIZE, fp1)) == BLOCKSIZE) {
+        fwrite(block, sizeof(DATA), num_read, fp2);
+    }
 
     fwrite( block, sizeof(DATA) , num_read, fp2 );
 
@@ -40,8 +45,17 @@ char *infile, *outfile;
     return SUCCESS;
 }
 
-int main() {
+int main()
+{
+    int erro=0;
 
+    erro = copyfile("sign_01.jpg", "sign_02.jpg");
 
+    if (erro== 1)
+        printf("Arquivo copiado com sucesso!\n");
+    else
+       printf("Falha na copia do arquivo!\n");
 
+    return 0;
 }
+
