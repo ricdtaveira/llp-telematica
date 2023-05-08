@@ -8,12 +8,21 @@ void chamada_por_valor(int x) {
 }
 
 void chamada_por_referencia (int *x) {
+  // atribuindo o valor indiretamente usando o endereço recebido 
   *x = 20;
+}
+
+void swap(int *x, int *y) {
+  int z=0;
+  z = *x;
+  *x = *y;
+  *y = z;
 }
 
 int main(){
 
     int a = 10;
+    int b = 20;
 
     // Chamada por valor 
     chamada_por_valor(a);
@@ -23,6 +32,13 @@ int main(){
 
     // Testar a confirmação da aleração do valor de a
 
-    printf("\nO valor de a= %d", a);
+    printf("\nO valor de a= %d\n", a);
+
+    // Testar a função swap
+    a=100;
+    b=200;
+    swap(&a, &b);
+
+    printf("\na=%d\nb=%d",a,b);
 
 }
