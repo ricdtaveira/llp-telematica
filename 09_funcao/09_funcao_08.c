@@ -30,7 +30,7 @@ int main(){
     // Chamada por referencia
     chamada_por_referencia(&a);
 
-    // Testar a confirmação da aleração do valor de a
+    // Testar a confirmação da alteração do valor de a
 
     printf("\nO valor de a= %d\n", a);
 
