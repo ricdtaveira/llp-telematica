@@ -5,7 +5,6 @@
 
 #include <stdio.h>
 
-void mostraMatriz(int &mynumbers, int n);
 
 int main() {
   
@@ -15,14 +14,15 @@ int main() {
                           {70, 80, 90}
                         };
 
-  mostraMatriz(myNumbers[], 3);
+  mostraMatriz(myNumbers, 3);
   return 0;
 }
 
-void mostraMatriz(int *matriz, int n) {
-  for (int i = 0; i < n; i++) {
+void mostraMatriz(int (*matriz)[3], int n) 
+{
+ for (int i = 0; i < n; i++) {
     for (int j = 0; j < n; j++) {
-        printf("Matriz[%d][%d]=%d",i,j,matriz[i][j]);
+        printf("\nMatriz[%d][%d]=%d",i,j,matriz[i][j]);
     }
   }
 }
