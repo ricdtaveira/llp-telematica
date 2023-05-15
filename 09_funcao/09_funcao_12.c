@@ -1,5 +1,5 @@
 //
-//
+// Matriz passa por referencia
 //
 #include <stdio.h>
 
