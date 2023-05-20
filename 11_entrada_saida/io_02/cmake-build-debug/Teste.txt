@@ -1,2 +1,0 @@
-Testando a copia de
-arquivo na linguagem C

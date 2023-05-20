@@ -1,3 +1,0 @@
-E:/00-IFCE/00-Repositorios GitHub/llp-telematica/11_entrada_saida/io_03/cmake-build-debug/CMakeFiles/io_03.dir
-E:/00-IFCE/00-Repositorios GitHub/llp-telematica/11_entrada_saida/io_03/cmake-build-debug/CMakeFiles/edit_cache.dir
-E:/00-IFCE/00-Repositorios GitHub/llp-telematica/11_entrada_saida/io_03/cmake-build-debug/CMakeFiles/rebuild_cache.dir
