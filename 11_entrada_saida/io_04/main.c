@@ -49,7 +49,7 @@ int main()
 {
     int erro=0;
 
-    erro = copyfile("sign_01.jpg", "sign_02.jpg");
+    erro = copyfile("figura.jpg", "jpgfig.jpg");
 
     if (erro== 1)
         printf("Arquivo copiado com sucesso!\n");
