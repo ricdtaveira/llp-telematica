@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include <string.h>
 
-#define MAX_ALUNOS 10
+#define MAX_ALUNOS 4
 #define ARQUIVO "alunos.db"
 
 typedef struct {
