@@ -15,6 +15,14 @@ int main( ) {
    printf( "Memoria ocupada pela variavel data.i: %d\n", sizeof(data.i));
    printf( "Memoria ocupada pela variavel data.f: %d\n", sizeof(data.f));
 
+   // A ultima atribuição é o valor que fica na variavel union 
+   strcpy( data.str, "C Programming");
+   data.i = 10;
+   data.f = 220.5;
+   
+   printf( "data.i : %d\n", data.i);
+   printf( "data.f : %f\n", data.f);
+   printf( "data.str : %s\n", data.str);
 
    return 0;
 }

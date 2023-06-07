@@ -37,6 +37,8 @@ int main() {
 
     // Criando uma variável do tipo union
     union Dado dado;
+    
+
 
     // Atribuindo valores à union com base no tipo especificado
     switch (tipo) {
