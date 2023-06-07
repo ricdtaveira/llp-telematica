@@ -20,7 +20,7 @@ de execução.
 Há algumas situações comuns em que a alocação dinâmica de memória é utilizada, incluem:
 >
 > 
-1. **Estruturas de dados flexíveis**: Ao lidar com estruturas de dados como listas, filas, pilhas 
+**1. Estruturas de dados flexíveis**: Ao lidar com estruturas de dados como listas, filas, pilhas 
 e árvores, o tamanho da estrutura pode variar à medida que novos elementos são adicionados 
 ou removidos. A alocação dinâmica de memória permite alocar espaço suficiente para essas estruturas conforme necessário.
 
@@ -54,7 +54,7 @@ de memória dinamicamente.
 Cada uma delas possui características específicas:
 >
 >
-1. **`malloc`**: A função `malloc` é usada para alocar uma quantidade específica de bytes de memória. Ela 
+**1. `malloc`**: A função `malloc` é usada para alocar uma quantidade específica de bytes de memória. Ela 
 retorna um ponteiro para a memória alocada ou `NULL` se a alocação falhar. A sintaxe básica é:
 ```
 void* malloc(size_t size);
@@ -91,7 +91,7 @@ int main() {
 }
 
 ```
-2. **`calloc`**: A função `calloc` também é usada para alocar memória, mas ela inicializa todos os 
+**2. `calloc`**: A função `calloc` também é usada para alocar memória, mas ela inicializa todos os 
 bytes alocados com zero. A sintaxe básica é:
 
 ```
