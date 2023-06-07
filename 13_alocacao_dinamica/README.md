@@ -24,15 +24,15 @@ Há algumas situações comuns em que a alocação dinâmica de memória é util
 e árvores, o tamanho da estrutura pode variar à medida que novos elementos são adicionados 
 ou removidos. A alocação dinâmica de memória permite alocar espaço suficiente para essas estruturas conforme necessário.
 
-1. **Entrada de dados do usuário**: Quando um programa precisa ler uma quantidade desconhecida de dados 
+**2. Entrada de dados do usuário**: Quando um programa precisa ler uma quantidade desconhecida de dados 
 do usuário, a alocação dinâmica de memória pode ser utilizada para alocar espaço suficiente para 
 armazenar os dados fornecidos.
 
-1. **Manipulação de arquivos grandes**: Ao lidar com arquivos grandes, como imagens, vídeos ou arquivos 
+**3. Manipulação de arquivos grandes**: Ao lidar com arquivos grandes, como imagens, vídeos ou arquivos 
 de dados extensos, a alocação dinâmica de memória pode ser usada para alocar espaço suficiente 
 para armazenar temporariamente partes do arquivo durante o processamento.
 
-1. **Otimização de recursos**: Em certos casos, a alocação dinâmica de memória pode ser utilizada 
+**4. Otimização de recursos**: Em certos casos, a alocação dinâmica de memória pode ser utilizada 
 para otimizar o uso de recursos, alocando apenas a quantidade necessária de memória em determinados 
 momentos, em vez de reservar uma quantidade fixa de memória desde o início.
 >
@@ -128,6 +128,60 @@ int main() {
     return 0;
 }
 ```
+>
+**3. realloc**: A função `realloc` é usada para alterar o tamanho de uma alocação de memória 
+previamente realizada. Ela pode ser usada tanto para aumentar quanto para diminuir o tamanho 
+da alocação. A sintaxe básica é 
+>
+```
+void* realloc(void* ptr, size_t size);
+```
+Exemplo de uso:
+```
+#include <stdio.h>
+#include <stdlib.h>
+
+int main() {
+    int* array;
+    int size = 5;
+
+    // Alocando memória para um array de inteiros
+    array = (int*)malloc(size * sizeof(int));
+
+    if (array == NULL) {
+        printf("Falha na alocação de memória!\n");
+        return 1;
+    }
+
+    // Usando o array alocado
+    for (int i = 0; i < size; i++) {
+        array[i] = i * 2;
+        printf("%d ", array[i]);
+    }
+
+    // Redimensionando o array para o dobro do tamanho
+    size *= 2;
+    array = (int*)realloc(array, size * sizeof(int));
+
+    if (array == NULL) {
+        printf("Falha na realocação de memória!\n");
+        return 1;
+    }
+
+    // Usando o array redimensionado
+    for (int i = 0; i < size; i++) {
+        printf("%d ", array[i]);
+    }
+
+    // Liberando a memória alocada
+    free(array);
+
+    return 0;
+}
+```
+
+
+
 
 
 
