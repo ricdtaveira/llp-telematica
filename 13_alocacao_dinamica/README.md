@@ -20,19 +20,19 @@ de execução.
 Há algumas situações comuns em que a alocação dinâmica de memória é utilizada, incluem:
 >
 > 
-1. *Estruturas de dados flexíveis*: Ao lidar com estruturas de dados como listas, filas, pilhas 
+1. **Estruturas de dados flexíveis**: Ao lidar com estruturas de dados como listas, filas, pilhas 
 e árvores, o tamanho da estrutura pode variar à medida que novos elementos são adicionados 
 ou removidos. A alocação dinâmica de memória permite alocar espaço suficiente para essas estruturas conforme necessário.
 
-1. *Entrada de dados do usuário*: Quando um programa precisa ler uma quantidade desconhecida de dados 
+1. **Entrada de dados do usuário**: Quando um programa precisa ler uma quantidade desconhecida de dados 
 do usuário, a alocação dinâmica de memória pode ser utilizada para alocar espaço suficiente para 
 armazenar os dados fornecidos.
 
-1. *Manipulação de arquivos grandes*: Ao lidar com arquivos grandes, como imagens, vídeos ou arquivos 
+1. **Manipulação de arquivos grandes**: Ao lidar com arquivos grandes, como imagens, vídeos ou arquivos 
 de dados extensos, a alocação dinâmica de memória pode ser usada para alocar espaço suficiente 
 para armazenar temporariamente partes do arquivo durante o processamento.
 
-*1. Otimização de recursos*: Em certos casos, a alocação dinâmica de memória pode ser utilizada 
+1. **Otimização de recursos**: Em certos casos, a alocação dinâmica de memória pode ser utilizada 
 para otimizar o uso de recursos, alocando apenas a quantidade necessária de memória em determinados 
 momentos, em vez de reservar uma quantidade fixa de memória desde o início.
 >
@@ -54,7 +54,7 @@ de memória dinamicamente.
 Cada uma delas possui características específicas:
 >
 >
-1. `malloc`: A função `malloc` é usada para alocar uma quantidade específica de bytes de memória. Ela 
+1. **`malloc`**: A função `malloc` é usada para alocar uma quantidade específica de bytes de memória. Ela 
 retorna um ponteiro para a memória alocada ou `NULL` se a alocação falhar. A sintaxe básica é:
 ```
 void* malloc(size_t size);
@@ -91,7 +91,7 @@ int main() {
 }
 
 ```
-1. `calloc`: A função `calloc` também é usada para alocar memória, mas ela inicializa todos os 
+2. **`calloc`**: A função `calloc` também é usada para alocar memória, mas ela inicializa todos os 
 bytes alocados com zero. A sintaxe básica é:
 
 ```
