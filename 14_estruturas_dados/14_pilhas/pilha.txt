@@ -1,0 +1,33 @@
+Pilha / Stack
+
+https://www.cs.usfca.edu/~galles/visualization/StackArray.html
+
+FILO = Fist in / Last Out
+LIFO = Last in / Fist Our
+
+ 
+
+---
+|6| -> Topo
+---
+|5|
+---
+|4|
+---
+|3|
+---
+|2|
+---
+|1|
+---
+
+- Os dados são inseridos sempre no topo, ou seja, sempre que
+um novo elemento é inserido ele ocupa o topo da pilha.
+
+- Só temo acesso ao elemento que está no topo.
+
+- O processo de inserir um elemento é chamado de push.
+
+- O processo de remover um elemento é chamado de pop.
+
+- Exemplo de utilização: CTRL + Z
