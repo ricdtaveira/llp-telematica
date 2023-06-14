@@ -1,7 +1,8 @@
 
-Questionário de Estrutura de Dados
+# Questionário de Estrutura de Dados #
+
 >
-1. Sobre a Estrutura de Dados Pilha responda:
+**1. Sobre a Estrutura de Dados Pilha responda:**
 >
 >
 a) Como funciona a operação de empilhar (push) em uma pilha implementada usando nós encadeados em C?
@@ -15,7 +16,7 @@ d) Como funciona a operação de desempilhar (pop) em uma pilha implementada usa
 e)  Quais são as aplicações práticas da estrutura de dados pilha?
 >
 >
-2. Sobre a Estrutura de Dados Fila responda: 
+**2. Sobre a Estrutura de Dados Fila responda:** 
 >
 >
 a) Como funciona a operação de enfileirar (enqueue) em uma fila implementada usando nós encadeados em C?
@@ -29,7 +30,7 @@ d) Como funciona a operação de desenfileirar (dequeue) em uma fila implementad
 e) Quais são as aplicações práticas da estrutura de dados fila?
 >
 >
-3. Sobre a Estrutura de Dados Lista responda:
+**3. Sobre a Estrutura de Dados Lista responda:**
 >
 >
 a) Como funciona a operação de inserção de um elemento no início (inserção no início) em uma lista encadeada em C?
@@ -41,5 +42,4 @@ c) Como funciona a operação de busca por um elemento em uma lista encadeada em
 d) Quais são as vantagens e desvantagens de usar uma lista encadeada em comparação com um array (vetor) em C?
 
 e) Como funciona a operação de remoção de um elemento específico em uma lista encadeada em C?
-
 >
