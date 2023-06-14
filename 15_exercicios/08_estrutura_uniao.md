@@ -1,7 +1,7 @@
 # Estrutura e União #
 
 >
-**1. Sobre a struct responda:**
+**1. Sobre struct responda:**
 >
 >
 a) O que é uma struct em C e qual é a sua finalidade?
