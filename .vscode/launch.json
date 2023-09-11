@@ -8,8 +8,8 @@
       "args": [],
       "stopAtEntry": false,
       "externalConsole": true,
-      "cwd": "c:/Users/ricdt/temp/llp-telematica/05_operadores_expressoes",
-      "program": "c:/Users/ricdt/temp/llp-telematica/05_operadores_expressoes/build/Debug/outDebug",
+      "cwd": "c:/Users/ricdt/temp/llp-telematica/06_arrays_ponteiros",
+      "program": "c:/Users/ricdt/temp/llp-telematica/06_arrays_ponteiros/build/Debug/outDebug",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [

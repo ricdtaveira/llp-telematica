@@ -4,7 +4,8 @@
 
 typedef struct aluno
 {
-    char al_nome[25], al_cpf[14];
+    char al_nome[25], 
+    al_cpf[14];
     unsigned int al_dia: 5,
                  al_mes : 5,
                  al_ano : 11;

@@ -36,7 +36,7 @@ int i;
 //              n é o numero de elementos do array
 float calculaMediaN1(arAluno,n)
 struct strucAluno arAluno[];
-    int n;
+int n;
 {
     float soma= 0.0;
     float media;
@@ -50,8 +50,8 @@ struct strucAluno arAluno[];
 
 int main() {
 
-// Definir uma variavel do tipo estrutura e em seguida inicialia cada
-// membro da estrutura
+// Definir uma variavel do tipo estrutura e em seguida 
+// inicializa cada membro da estrutura
     struct strucAluno s2[10];
     float med=0.0;
 
