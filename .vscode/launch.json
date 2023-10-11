@@ -8,8 +8,8 @@
       "args": [],
       "stopAtEntry": false,
       "externalConsole": true,
-      "cwd": "e:/Temp/llp-telematica/15_exercicios/20_algoritmos",
-      "program": "e:/Temp/llp-telematica/15_exercicios/20_algoritmos/build/Debug/outDebug",
+      "cwd": "e:/Temp/llp-telematica/20_algoritmos",
+      "program": "e:/Temp/llp-telematica/20_algoritmos/build/Debug/outDebug",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [

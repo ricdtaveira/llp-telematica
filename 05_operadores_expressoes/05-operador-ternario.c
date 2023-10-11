@@ -1,11 +1,12 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include <string.h> 
+#include <string.h>
 
-int main() {
-  int time = 20;
+int main()
+{
+  int hora = 20;
   char saudacao[20];
-  (time < 18) ? strcpy("Good day.",saudacao) : strcpy("Good evening.",saudacao);
-  printf("%s",saudacao);
+  (hora < 18) ? strcpy(saudacao, "Good day.") : strcpy(saudacao, "Good evening.");
+  printf("%s", saudacao);
   return 0;
 }
