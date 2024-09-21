@@ -1,6 +1,6 @@
 # Aula Sábado - Arquivos/Struct/Array de Struct
 
-## Promp-01
+## Prompt-01
 >
 Escreva um programa C compatível com o compilador C do ambiente Replit.com. O programa fará as operações a seguir: 
 >
