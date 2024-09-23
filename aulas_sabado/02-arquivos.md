@@ -1,6 +1,7 @@
 # Aula Sábado - Arquivos/Struct/Array de Struct
 
 ## Prompt-01
+```
 >
 Escreva um programa C compatível com o compilador C do ambiente Replit.com. O programa fará as operações a seguir: 
 >
@@ -38,6 +39,6 @@ para confirmar exclusão do produto.
 Observação: Os produtos serão armazenados em um array de 
 struct de produtos.
 >
-
+```
 
 
